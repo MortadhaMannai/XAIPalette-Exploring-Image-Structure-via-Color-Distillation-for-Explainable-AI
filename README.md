@@ -45,32 +45,6 @@ Your `~/Data/` folder should have this structure:
 ```
 
 
-## Overview
-We release the PyTorch code for ColorCNN, a newly introduced architecture in our paper *[Learning to Structure an Image with Few Colors](https://hou-yz.github.io/publication/2019-cvpr2020-colorcnn)*.
-![system overview](https://hou-yz.github.io/images/ColorCNN_system.png "System overview of image color quantization with ColorCNN.")
- 
-## Content
-- [Dependencies](#dependencies)
-- [Data Preparation](#data-preparation)
-- [Code](#code)
-    * [Training Classifiers](#training-classifiers)
-    * [Training & Evaluating ColorCNN](#training-&-evaluating-colorcnn)
-    * [Evaluating Traditional Methods](#evaluating-traditional-methods)
-
-
-## Dependencies
-This code uses the following libraries
-- python 3.7+
-- pytorch 1.4+ & torchvision
-- numpy
-- matplotlib
-- pillow
-- opencv-python
-
-## Data Preparation
-By default, all datasets are in `~/Data/`. We use CIFAR10, CIFAR100, STL10, and tiny-imagenet-200 in this project. 
-The first three datasets can be automatically downloaded. 
-
 Tiny-imagenet-200 can be downloaded from this [link](http://cs231n.stanford.edu/tiny-imagenet-200.zip). 
 Once downloaded, please extract the zip files under `~/Data/tiny200/`. 
 Then, run `python color_distillation/utils/tiny_imagenet_val_reformat.py` to reformat the validation set. (thank [@tjmoon0104](https://github.com/tjmoon0104/Tiny-ImageNet-Classifier/blob/master/utils/tiny-imgnet-val-reformat.ipynb) for his code).
@@ -119,6 +93,11 @@ python python grid_downsample.py -d cifar10 -a alexnet --num_colors 2 --sample_t
 Please run the shell script `bash test_mcut_dither.sh` to evaluate *MedianCut+Dithering* with AlexNet on all four datasets, under a 1-bit color space. 
 
 
+## Inspiration Authors (source) :
+- Hou, Yunzhong
+- Zheng, Liang
+- Gould, Stephen
+- Manai, Mortadha
 
 
 
