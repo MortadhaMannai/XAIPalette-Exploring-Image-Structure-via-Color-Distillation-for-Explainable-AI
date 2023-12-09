@@ -6,7 +6,7 @@ Author: Manai Mortadha
 This repository contains the PyTorch implementation of XAIPalette, a novel approach aiming to explore image structure via Color Distillation for Explainable AI (XAI). It provides insights into image interpretation by distilling structural information through color representation.
 
 ## Overview
-XAIPalette focuses on decoding image structures using Color Distillation, as detailed in our paper *[Learning to Structure an Image with Few Colors](https://hou-yz.github.io/publication/2019-cvpr2020-colorcnn)*, which introduces ColorCNN, an innovative architecture for image color quantization.
+XAIPalette focuses on decoding image structures using Color Distillation, as detailed in this paper *[Learning to Structure an Image with Few Colors](https://hou-yz.github.io/publication/2019-cvpr2020-colorcnn)*, which introduces ColorCNN, an innovative architecture for image color quantization.
 ![System Overview](https://hou-yz.github.io/images/ColorCNN_system.png "System overview depicting image color quantization with ColorCNN")
 
 ## Content
