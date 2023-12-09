@@ -1,6 +1,6 @@
 # XAIPalette-Exploring-Image-Structure-via-Color-Distillation-for-Explainable-AI
 
-Author: Manai Mortadha 
+Author: Manai Mortadha  
 
 ## About
 This repository contains the PyTorch implementation of XAIPalette, a novel approach aiming to explore image structure via Color Distillation for Explainable AI (XAI). It provides insights into image interpretation by distilling structural information through color representation.
